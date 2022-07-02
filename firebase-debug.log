@@ -1,0 +1,197 @@
+[debug] [2022-07-02T23:34:35.515Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T23:34:35.517Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DIEGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-02T23:34:35.518Z] CLI Version:   9.23.0
+[debug] [2022-07-02T23:34:35.518Z] Platform:      win32
+[debug] [2022-07-02T23:34:35.518Z] Node Version:  v14.17.3
+[debug] [2022-07-02T23:34:35.519Z] Time:          Sat Jul 02 2022 19:34:35 GMT-0400 (Horário Padrão do Amazonas)
+[debug] [2022-07-02T23:34:35.519Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T23:34:35.524Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T23:34:35.525Z] > authorizing via signed-in user (diegcarlos@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projetos\testept
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-02T23:34:55.934Z] > refreshing access token with scopes: []
+[debug] [2022-07-02T23:34:55.935Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-07-02T23:34:56.279Z] <<< HTTP RESPONSE 200 {"date":"Sat, 02 Jul 2022 23:34:54 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:34:56.299Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-02T23:34:57.664Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-02T23:34:57.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project diego-marvel-comics (diego-marvel-comics) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at D:\projetos\testept 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=981964240&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-02T23:35:15.268Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"5a735feb683dc8336784","redirect_uri":"http://localhost:9005","state":"981964240"}
+[debug] [2022-07-02T23:35:15.688Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 02 Jul 2022 23:35:14 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"68f183df65a5ba5b30bfcf707062f343\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ github-production-user-asset-6210df.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"CC25:681E:2580E1:2EB62A:62C0D631"}
+[debug] [2022-07-02T23:35:15.691Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-02T23:35:16.093Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-02T23:35:16.093Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"diegcarlos","id":53383018,"node_id":"MDQ6VXNlcjUzMzgzMDE4","avatar_url":"https://avatars.githubusercontent.com/u/53383018?v=4","gravatar_id":"","url":"https://api.github.com/users/diegcarlos","html_url":"https://github.com/diegcarlos","followers_url":"https://api.github.com/users/diegcarlos/followers","following_url":"https://api.github.com/users/diegcarlos/following{/other_user}","gists_url":"https://api.github.com/users/diegcarlos/gists{/gist_id}","starred_url":"https://api.github.com/users/diegcarlos/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/diegcarlos/subscriptions","organizations_url":"https://api.github.com/users/diegcarlos/orgs","repos_url":"https://api.github.com/users/diegcarlos/repos","events_url":"https://api.github.com/users/diegcarlos/events{/privacy}","received_events_url":"https://api.github.com/users/diegcarlos/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":13,"public_gists":0,"followers":1,"following":1,"created_at":"2019-07-27T22:02:29Z","updated_at":"2022-06-30T18:34:05Z","private_gists":1,"total_private_repos":4,"owned_private_repos":4,"disk_usage":27686,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as diegcarlos 
+[info] 
+[debug] [2022-07-02T23:35:24.305Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-02T23:35:24.624Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-07-02T23:35:24.625Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-02T23:35:24.799Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-02T23:35:25.133Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-07-02T23:35:25.133Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-02T23:35:45.406Z] >>> [apiv2][query] GET https://api.github.com/repos/user/re/actions/secrets/public-key type=owner
+[debug] [2022-07-02T23:35:45.725Z] <<< [apiv2][status] GET https://api.github.com/repos/user/re/actions/secrets/public-key 404
+[debug] [2022-07-02T23:35:45.725Z] <<< [apiv2][body] GET https://api.github.com/repos/user/re/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-07-02T23:35:56.231Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2022-07-02T23:35:56.560Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2022-07-02T23:35:56.560Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-02T23:36:56.911Z] >>> [apiv2][query] GET https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/public-key type=owner
+[debug] [2022-07-02T23:36:57.249Z] <<< [apiv2][status] GET https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/public-key 200
+[debug] [2022-07-02T23:36:57.249Z] <<< [apiv2][body] GET https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/public-key {"key_id":"568250167242549743","key":"9qNYYTSyCbMapDk5gLOBrQuQC+u8qP8iFWk8Xk3xsGI="}
+[debug] [2022-07-02T23:36:57.250Z] >>> [apiv2][query] GET https://api.github.com/repos/diegcarlos/marvelComics [none]
+[debug] [2022-07-02T23:36:57.632Z] <<< [apiv2][status] GET https://api.github.com/repos/diegcarlos/marvelComics 200
+[debug] [2022-07-02T23:36:57.632Z] <<< [apiv2][body] GET https://api.github.com/repos/diegcarlos/marvelComics {"id":509882441,"node_id":"R_kgDOHmQwSQ","name":"marvelComics","full_name":"diegcarlos/marvelComics","private":false,"owner":{"login":"diegcarlos","id":53383018,"node_id":"MDQ6VXNlcjUzMzgzMDE4","avatar_url":"https://avatars.githubusercontent.com/u/53383018?v=4","gravatar_id":"","url":"https://api.github.com/users/diegcarlos","html_url":"https://github.com/diegcarlos","followers_url":"https://api.github.com/users/diegcarlos/followers","following_url":"https://api.github.com/users/diegcarlos/following{/other_user}","gists_url":"https://api.github.com/users/diegcarlos/gists{/gist_id}","starred_url":"https://api.github.com/users/diegcarlos/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/diegcarlos/subscriptions","organizations_url":"https://api.github.com/users/diegcarlos/orgs","repos_url":"https://api.github.com/users/diegcarlos/repos","events_url":"https://api.github.com/users/diegcarlos/events{/privacy}","received_events_url":"https://api.github.com/users/diegcarlos/received_events","type":"User","site_admin":false},"html_url":"https://github.com/diegcarlos/marvelComics","description":null,"fork":false,"url":"https://api.github.com/repos/diegcarlos/marvelComics","forks_url":"https://api.github.com/repos/diegcarlos/marvelComics/forks","keys_url":"https://api.github.com/repos/diegcarlos/marvelComics/keys{/key_id}","collaborators_url":"https://api.github.com/repos/diegcarlos/marvelComics/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/diegcarlos/marvelComics/teams","hooks_url":"https://api.github.com/repos/diegcarlos/marvelComics/hooks","issue_events_url":"https://api.github.com/repos/diegcarlos/marvelComics/issues/events{/number}","events_url":"https://api.github.com/repos/diegcarlos/marvelComics/events","assignees_url":"https://api.github.com/repos/diegcarlos/marvelComics/assignees{/user}","branches_url":"https://api.github.com/repos/diegcarlos/marvelComics/branches{/branch}","tags_url":"https://api.github.com/repos/diegcarlos/marvelComics/tags","blobs_url":"https://api.github.com/repos/diegcarlos/marvelComics/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/diegcarlos/marvelComics/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/diegcarlos/marvelComics/git/refs{/sha}","trees_url":"https://api.github.com/repos/diegcarlos/marvelComics/git/trees{/sha}","statuses_url":"https://api.github.com/repos/diegcarlos/marvelComics/statuses/{sha}","languages_url":"https://api.github.com/repos/diegcarlos/marvelComics/languages","stargazers_url":"https://api.github.com/repos/diegcarlos/marvelComics/stargazers","contributors_url":"https://api.github.com/repos/diegcarlos/marvelComics/contributors","subscribers_url":"https://api.github.com/repos/diegcarlos/marvelComics/subscribers","subscription_url":"https://api.github.com/repos/diegcarlos/marvelComics/subscription","commits_url":"https://api.github.com/repos/diegcarlos/marvelComics/commits{/sha}","git_commits_url":"https://api.github.com/repos/diegcarlos/marvelComics/git/commits{/sha}","comments_url":"https://api.github.com/repos/diegcarlos/marvelComics/comments{/number}","issue_comment_url":"https://api.github.com/repos/diegcarlos/marvelComics/issues/comments{/number}","contents_url":"https://api.github.com/repos/diegcarlos/marvelComics/contents/{+path}","compare_url":"https://api.github.com/repos/diegcarlos/marvelComics/compare/{base}...{head}","merges_url":"https://api.github.com/repos/diegcarlos/marvelComics/merges","archive_url":"https://api.github.com/repos/diegcarlos/marvelComics/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/diegcarlos/marvelComics/downloads","issues_url":"https://api.github.com/repos/diegcarlos/marvelComics/issues{/number}","pulls_url":"https://api.github.com/repos/diegcarlos/marvelComics/pulls{/number}","milestones_url":"https://api.github.com/repos/diegcarlos/marvelComics/milestones{/number}","notifications_url":"https://api.github.com/repos/diegcarlos/marvelComics/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/diegcarlos/marvelComics/labels{/name}","releases_url":"https://api.github.com/repos/diegcarlos/marvelComics/releases{/id}","deployments_url":"https://api.github.com/repos/diegcarlos/marvelComics/deployments","created_at":"2022-07-02T23:36:44Z","updated_at":"2022-07-02T23:36:44Z","pushed_at":"2022-07-02T23:36:45Z","git_url":"git://github.com/diegcarlos/marvelComics.git","ssh_url":"git@github.com:diegcarlos/marvelComics.git","clone_url":"https://github.com/diegcarlos/marvelComics.git","svn_url":"https://github.com/diegcarlos/marvelComics","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"network_count":0,"subscribers_count":1}
+[debug] [2022-07-02T23:36:57.634Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-07-02T23:36:57.634Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-07-02T23:36:57.993Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 02 Jul 2022 23:36:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:36:58.025Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/diego-marvel-comics/serviceAccounts  
+ {"accountId":"github-action-509882441","serviceAccount":{"displayName":"GitHub Actions (diegcarlos/marvelComics)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository diegcarlos/marvelComics"}}
+[debug] [2022-07-02T23:36:59.396Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:36:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:36:59.398Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/diego-marvel-comics/serviceAccounts/github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com  
+ 
+[debug] [2022-07-02T23:36:59.399Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/diego-marvel-comics:getIamPolicy  
+ 
+[debug] [2022-07-02T23:37:00.421Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:36:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:37:00.441Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:36:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=783","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:37:00.441Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/diego-marvel-comics:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwXi2uw5WTw=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-cko71@diego-marvel-comics.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-634830877342@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-cko71@diego-marvel-comics.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:diegcarlos@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-634830877342@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2022-07-02T23:37:02.138Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:37:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1443","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:37:02.138Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/diego-marvel-comics/serviceAccounts/github-action-509882441@diego-marvel-comics.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2022-07-02T23:37:03.545Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:37:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-509882441 with Firebase Hosting admin permissions. 
+[debug] [2022-07-02T23:37:03.568Z] >>> [apiv2][query] PUT https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/FIREBASE_SERVICE_ACCOUNT_DIEGO_MARVEL_COMICS [none]
+[debug] [2022-07-02T23:37:03.569Z] >>> [apiv2][body] PUT https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/FIREBASE_SERVICE_ACCOUNT_DIEGO_MARVEL_COMICS {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2022-07-02T23:37:03.981Z] <<< [apiv2][status] PUT https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/FIREBASE_SERVICE_ACCOUNT_DIEGO_MARVEL_COMICS 201
+[debug] [2022-07-02T23:37:03.982Z] <<< [apiv2][body] PUT https://api.github.com/repos/diegcarlos/marvelComics/actions/secrets/FIREBASE_SERVICE_ACCOUNT_DIEGO_MARVEL_COMICS {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_DIEGO_MARVEL_COMICS. 
+[info] i  You can manage your secrets at https://github.com/diegcarlos/marvelComics/settings/secrets. 
+[info] 
+[debug] [2022-07-02T23:37:04.309Z] TypeError: Cannot read property 'predeploy' of undefined
+    at Object.initGitHub [as hosting:github] (C:\Users\DIEGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:65:30)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async init (C:\Users\DIEGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-07-02T23:37:22.588Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T23:37:22.590Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DIEGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-02T23:37:22.590Z] CLI Version:   9.23.0
+[debug] [2022-07-02T23:37:22.590Z] Platform:      win32
+[debug] [2022-07-02T23:37:22.590Z] Node Version:  v14.17.3
+[debug] [2022-07-02T23:37:22.591Z] Time:          Sat Jul 02 2022 19:37:22 GMT-0400 (Horário Padrão do Amazonas)
+[debug] [2022-07-02T23:37:22.591Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T23:37:22.599Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T23:37:22.599Z] > authorizing via signed-in user (diegcarlos@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projetos\testept
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-02T23:37:42.543Z] > refreshing access token with scopes: []
+[debug] [2022-07-02T23:37:42.544Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-07-02T23:37:42.878Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 02 Jul 2022 23:37:41 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:37:42.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-02T23:37:43.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-02T23:37:43.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project diego-marvel-comics (diego-marvel-comics) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-07-02T23:37:47.495Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-07-02T23:37:47.495Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-07-02T23:37:47.853Z] <<< HTTP RESPONSE 200 {"date":"Sat, 02 Jul 2022 23:37:46 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:37:47.889Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/diego-marvel-comics/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2022-07-02T23:37:49.106Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:37:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-07-02T23:37:49.107Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/diego-marvel-comics/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2022-07-02T23:37:50.760Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:37:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:38:00.775Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/diego-marvel-comics/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2022-07-02T23:38:01.988Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Jul 2022 23:38:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-07-02T23:38:01.995Z] > refreshing access token with scopes: []
+[debug] [2022-07-02T23:38:01.995Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-07-02T23:38:02.356Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 02 Jul 2022 23:38:00 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-07-02T23:38:02.361Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/diego-marvel-comics [none]
+[debug] [2022-07-02T23:38:03.586Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/diego-marvel-comics 200
+[debug] [2022-07-02T23:38:03.586Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/diego-marvel-comics {"projectId":"diego-marvel-comics","projectNumber":"634830877342","displayName":"diego-marvel-comics","name":"projects/diego-marvel-comics","resources":{"hostingSite":"diego-marvel-comics"},"state":"ACTIVE"}
+[debug] [2022-07-02T23:38:34.102Z] ----------------------------------------------------------------------
+[debug] [2022-07-02T23:38:34.104Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DIEGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-02T23:38:34.104Z] CLI Version:   9.23.0
+[debug] [2022-07-02T23:38:34.104Z] Platform:      win32
+[debug] [2022-07-02T23:38:34.104Z] Node Version:  v14.17.3
+[debug] [2022-07-02T23:38:34.105Z] Time:          Sat Jul 02 2022 19:38:34 GMT-0400 (Horário Padrão do Amazonas)
+[debug] [2022-07-02T23:38:34.105Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-02T23:38:34.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-02T23:38:34.111Z] > authorizing via signed-in user (diegcarlos@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projetos\testept
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
