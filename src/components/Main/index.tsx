@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "../Card";
-import { api } from "../../services/api";
 
 import { ThreeDots } from "react-loading-icons";
 
@@ -16,7 +15,7 @@ const Main: React.FC = () => {
     offset,
     handleFavorite,
     handleNextPage,
-    handlePreviusPage,
+    handlePreviousPage,
   } = useMarvelComics();
   return (
     <Container>
@@ -42,7 +41,7 @@ const Main: React.FC = () => {
       <Pagination>
         <Button
           disabled={offset <= 0}
-          onClick={() => handlePreviusPage(offset - 1)}
+          onClick={() => handlePreviousPage(offset - 1)}
         >
           PREVIOUS PAGE
         </Button>

@@ -1,5 +1,4 @@
 import React, {
-  ChangeEvent,
   createContext,
   ReactNode,
   useContext,
@@ -29,18 +28,18 @@ interface TypesContext {
   favoriteComics: number[];
   handleFavorite: (id: number, index: number) => void;
   handleNextPage: (offset: number) => void;
-  handlePreviusPage: (offset: number) => void;
-  handlesearchComics: (value: string) => void;
+  handlePreviousPage: (offset: number) => void;
+  handleSearchComics: (value: string) => void;
   offset: number;
 }
 
-interface TypeProvaider {
+interface TypeProvider {
   children: ReactNode;
 }
 
 const ContextComics = createContext<TypesContext>({} as TypesContext);
 
-export const ProvaiderComics: React.FC<TypeProvaider> = (props) => {
+export const ProviderComics: React.FC<TypeProvider> = (props) => {
   const { children } = props;
 
   const [comics, setComics] = useState<TypesComic[]>([] as TypesComic[]);
@@ -90,11 +89,11 @@ export const ProvaiderComics: React.FC<TypeProvaider> = (props) => {
     getComics(offset);
   };
 
-  const handlePreviusPage = (offset: number) => {
+  const handlePreviousPage = (offset: number) => {
     getComics(offset);
   };
 
-  const handlesearchComics = (data: string) => {
+  const handleSearchComics = (data: string) => {
     setSearch(data);
   };
 
@@ -110,8 +109,8 @@ export const ProvaiderComics: React.FC<TypeProvaider> = (props) => {
         favoriteComics,
         handleFavorite,
         handleNextPage,
-        handlePreviusPage,
-        handlesearchComics,
+        handlePreviousPage,
+        handleSearchComics,
         offset,
       }}
     >

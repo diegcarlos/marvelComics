@@ -2,15 +2,15 @@ import React from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import GlobalStyled from "./GlobalStyled";
-import { ProvaiderComics } from "./context/useMarvelComics"
+import { ProviderComics } from "./context/useMarvelComics"
 
 const App: React.FC = () => {
   return (
-    <ProvaiderComics>
+    <ProviderComics>
       <GlobalStyled />
       <Header />
       <Main />
-    </ProvaiderComics>
+    </ProviderComics>
   );
 };
 

@@ -7,10 +7,10 @@ import expect from "lodash.debounce";
 import { useMarvelComics } from "../../context/useMarvelComics";
 
 const Search: React.FC = () => {
-  const { handlesearchComics } = useMarvelComics();
+  const { handleSearchComics } = useMarvelComics();
 
   const onChange = expect(
-    ({ target }) => handlesearchComics(target.value),
+    ({ target }) => handleSearchComics(target.value),
     500
   );
 
